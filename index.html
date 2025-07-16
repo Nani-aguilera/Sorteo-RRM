@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorteo Rifas Colegio Raúl Ramírez Mayol</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Sorteo Rifas Colegio Raúl Ramírez Mayol</h1>
+    </header>
+    <main>
+        <section class="generator-section">
+            <h2>Rifa Ganadora</h2>
+            <div class="input-group">
+                <label for="minRifa">Desde:</label>
+                <input type="number" id="minRifa" value="1">
+            </div>
+            <div class="input-group">
+                <label for="maxRifa">Hasta:</label>
+                <input type="number" id="maxRifa" value="100">
+            </div>
+            <button id="generateRifa">Generar Rifa</button>
+            <p class="result">Rifa Ganadora: <span id="resultRifa">--</span></p>
+        </section>
+
+        <section class="generator-section">
+            <h2>Número Ganador</h2>
+            <div class="input-group">
+                <label for="minNumero">Desde:</label>
+                <input type="number" id="minNumero" value="1">
+            </div>
+            <div class="input-group">
+                <label for="maxNumero">Hasta:</label>
+                <input type="number" id="maxNumero" value="100">
+            </div>
+            <button id="generateNumero">Generar Número</button>
+            <p class="result">Número Ganador: <span id="resultNumero">--</span></p>
+        </section>
+
+        <section class="winner-selection">
+            <h2>Seleccionar Ganador</h2>
+            <button id="markWinner" class="winner-btn">Ganador</button>
+            <button id="markLoser" class="loser-btn">Al agua</button>
+            <p id="selectionMessage"></p>
+        </section>
+
+        <section class="history-section">
+            <h2>Historial de Sorteos</h2>
+            <ul id="lotteryHistory">
+                </ul>
+            <button id="clearHistory">Limpiar Historial</button>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
